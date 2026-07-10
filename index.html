@@ -268,12 +268,24 @@
   </main>
 
   <footer>
-    <p>자료 기준: 심평원(HIRA)·국립재활원·보건복지부·근로복지공단·기관 공개정보 및 원본 조사표 (2026.07 교차검토)</p>
-    <a href="#top">맨 위로 ↑</a>
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <p style="margin: 0; line-height: 1.5; color: var(--muted);">자료 기준: 심평원(HIRA)·국립재활원·보건복지부·근로복지공단·기관 공개정보 및 원본 조사표 (2026.07 교차검토)</p>
+      <p style="margin: 4px 0 0; font-size: 12.5px;">
+        <a href="about.html" style="color: var(--mint); font-weight: 800; text-decoration: none; margin-right: 8px;">서비스 소개</a> | 
+        <a href="privacy.html" style="color: var(--mint); font-weight: 800; text-decoration: none; margin-left: 8px; margin-right: 8px;">개인정보처리방침</a> | 
+        <a href="disclaimer.html" style="color: var(--mint); font-weight: 800; text-decoration: none; margin-left: 8px;">이용약관 및 면책조항</a>
+      </p>
+      <p style="margin: 6px 0 0; font-size: 11px; color: var(--muted);">&copy; 2026 충북 재활기관 찾기 가이드. All rights reserved.</p>
+    </div>
+    <a href="#top" style="align-self: center; flex-shrink: 0; margin-left: 20px;">맨 위로 ↑</a>
   </footer>
 
   <dialog id="detailDialog" aria-labelledby="dialogTitle">
     <div id="dialogContent"></div>
+  </dialog>
+
+  <dialog id="homepageDialog" aria-labelledby="homepageDialogTitle">
+    <div id="homepageDialogContent"></div>
   </dialog>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
